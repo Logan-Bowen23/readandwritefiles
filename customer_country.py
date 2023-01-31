@@ -16,10 +16,8 @@ def main():
         name = row[1] + " " + row[2]
         country = row[4]
 
-        total_customers += 1
         output = [name, format(country, "20")]
         writer.writerow(output)
-        print("Total Customers: ")
 
     infile.close()
     outfile.close()
